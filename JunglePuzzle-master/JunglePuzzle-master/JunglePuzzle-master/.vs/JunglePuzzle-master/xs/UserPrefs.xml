@@ -1,17 +1,16 @@
 ﻿<Properties StartupConfiguration="{9BD5153F-4300-2499-4CFB-629EB6A487EE}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Enemy3.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Character.cs">
     <Files>
-      <File FileName="Assets/Character.cs" Line="39" Column="13" />
-      <File FileName="Assets/Enemy.cs" Line="33" Column="2" />
-      <File FileName="Assets/NewBehaviourScript.cs" Line="22" Column="24" />
-      <File FileName="Assets/Enemy3.cs" Line="6" Column="5" />
+      <File FileName="Assets/Character.cs" Line="29" Column="2" />
+      <File FileName="Assets/Enemy3.cs" Line="6" Column="2" />
+      <File FileName="Assets/MainMenu.cs" Line="10" Column="39" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="JunglePuzzle-master" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Enemy3.cs" selected="True" />
+              <Node name="Character.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -20,7 +19,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f6de7ba0-1370-485b-adab-449e5c4f4004" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5bddae2f-f431-47ac-b2e2-eb6b85f8d406" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

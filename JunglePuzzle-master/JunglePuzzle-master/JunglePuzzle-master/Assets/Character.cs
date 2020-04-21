@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Character : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Character : MonoBehaviour
     public GameObject obj;
     public int buttoncount;
     public int buttoncount1;
+    bool levelComplete;
 
 
      // Start is called before the first frame update
@@ -24,6 +26,7 @@ public class Character : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         buttoncount=0;
         buttoncount1=0;
+ 
     }
 
     // Update is called once per frame
@@ -55,7 +58,10 @@ public class Character : MonoBehaviour
 
 
     }
-    void OnCollisionEnter(Collision collision)
+
+    
+
+void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "Enemy" || collision.gameObject.name == "platform-detail-15")
         {
@@ -65,19 +71,19 @@ public class Character : MonoBehaviour
         {
             Instantiate(obj, new Vector3(59, 1, 0), Quaternion.identity); buttoncount++;
         }
-        else if (collision.gameObject.name == "Button" && buttoncount < 3)
+        else if (collision.gameObject.name == "Button2" && buttoncount < 3)
         {
             Instantiate(obj, new Vector3(59, 1, 0), Quaternion.identity); buttoncount++;
         }
-        else if (collision.gameObject.name=="Button1" && buttoncount1<1)
+        else if (collision.gameObject.name == "Button1" && buttoncount1 < 1)
         {
             Instantiate(obj, new Vector3(67, 1, 0), Quaternion.identity);
             buttoncount1++;
 
         }
-        else if(collision.gameObject.name=="Exit")
+        else if (collision.gameObject.name == "Exit")
         {
-
+            SceneManager.LoadScene("MainMenu");
         }
 
     }
