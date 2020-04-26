@@ -50,7 +50,7 @@ public class Character : MonoBehaviour
             }
             else { return false; }
         }
-        if(Input.GetButtonDown("Jump")&& (grounded() || db < 1))
+        if(Input.GetButtonDown("Jump")&& (grounded() || db < 2))
         {
             db += 1;
             rb.AddForce(Vector3.up * jumpHeight, ForceMode.VelocityChange);
@@ -63,9 +63,10 @@ public class Character : MonoBehaviour
 
 void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Enemy" || collision.gameObject.name == "platform-detail-15")
+        if (collision.gameObject.name == "Enemy" || collision.gameObject.tag == "Enemy")
         {
-            transform.position = new Vector3(-14f, -3.5f, 0f);
+            transform.position = new Vector3(-8.06f, -2.36f, 0f);
+            rb.velocity = Vector3.zero;
         }
         else if (collision.gameObject.name == "Button" && buttoncount < 1)
         {
