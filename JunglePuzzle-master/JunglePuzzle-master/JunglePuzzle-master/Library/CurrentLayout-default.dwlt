@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 492}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 492}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_MinSize: {x: 911, y: 442}
   m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
-  controlID: 30057
+  controlID: 199
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 30036
+  controlID: 35
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -330,8 +330,8 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
+    m_HSlider: 1
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -344,18 +344,18 @@ MonoBehaviour:
       y: 21
       width: 834
       height: 419
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 417, y: 209.5}
+    m_Scale: {x: 1.0609, y: 1.0609}
+    m_Translation: {x: 417.73077, y: 222.19763}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -417
-      y: -209.5
-      width: 834
-      height: 419
+      x: -393.75134
+      y: -209.44258
+      width: 786.125
+      height: 394.9477
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 834, y: 440}
@@ -400,9 +400,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 47.51816, y: 33.026382, z: -3.010049}
+    m_Target: {x: 153.98706, y: 28.338022, z: -285.12595}
     speed: 2
-    m_Value: {x: 49.24251, y: 32.804173, z: -2.813563}
+    m_Value: {x: 155.07794, y: 28.55902, z: -285.02206}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -452,9 +452,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 45.616238
+    m_Target: 24.131575
     speed: 2
-    m_Value: 43.6519
+    m_Value: 23.092417
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -510,7 +510,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 7277ffff849bffffdeb6ffff2eb8ffff18baffffe2baffff0ae8ffff0af0ffff6cfbffff
+      m_ExpandedIDs: 6cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -579,14 +579,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Joyce\Documents\GitHub\JunglePuzzle\JunglePuzzle-master\JunglePuzzle-master\JunglePuzzle-master
+  m_LastProjectPath: C:\Users\Chris.000\Documents\GitHub\JunglePuzzle\JunglePuzzle-master\JunglePuzzle-master\JunglePuzzle-master
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d8350000
-    m_LastClickedID: 13784
-    m_ExpandedIDs: 00000000d8350000da350000dc35000000ca9a3b
+    m_SelectedIDs: 56390000
+    m_LastClickedID: 14678
+    m_ExpandedIDs: 0000000056390000583900005a39000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -614,7 +614,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d8350000da350000dc35000000ca9a3b
+    m_ExpandedIDs: 0000000056390000583900005a390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
