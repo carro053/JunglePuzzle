@@ -82,6 +82,7 @@
     <Compile Include="Assets\Enemy Scripts\L2E4.cs" />
     <Compile Include="Assets\Enemy Scripts\L2E5.cs" />
     <Compile Include="Assets\Game Objects\BoxScript.cs" />
+    <Compile Include="Assets\OptionsMenu.cs" />
     <Compile Include="Assets\PauseMenu.cs" />
     <Compile Include="Assets\Volume and Menus\MainMenu.cs" />
     <Compile Include="Assets\Volume and Menus\Volume.cs" />
