@@ -22,8 +22,7 @@ public class Character : MonoBehaviour
      // Start is called before the first frame update
     void Start()
     {
-        speed = 3.0f;
-        jumpHeight = 7.0f;
+       
         rb = GetComponent<Rigidbody>();
         buttoncount=0;
         buttoncount1=0;
@@ -31,14 +30,25 @@ public class Character : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Level1")
         {
             respawnPoint = new Vector3(-14.0f, -3.5f, 0);
+            speed = 3.0f;
+            jumpHeight = 6.2f;
             doubleJump = false;
         }
         else if(SceneManager.GetActiveScene().name == "Level2")
         {
             respawnPoint = new Vector3(-9, -2, 0);
+            speed = 5.0f;
+            jumpHeight = 7.0f;
             doubleJump = true;
         }
- 
+        else if (SceneManager.GetActiveScene().name == "Level3")
+        {
+            respawnPoint = new Vector3(-14, -3, 0);
+            speed = 5.0f;
+            jumpHeight = 7.0f;
+            doubleJump = true;
+        }
+
     }
 
     // Update is called once per frame
@@ -105,6 +115,12 @@ void OnCollisionEnter(Collision collision)
         else if (collision.gameObject.name == "ExitLevel1")
         {
             SceneManager.LoadScene("Level2");
+
+        }
+        else if (collision.gameObject.name == "ExitLevel2")
+        {
+            SceneManager.LoadScene("Level3");
+
         }
 
     }
