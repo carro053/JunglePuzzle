@@ -60,7 +60,7 @@ public class Character : MonoBehaviour
         direction = direction.normalized;
         if (direction != Vector3.zero)
         {
-            transform.forward = direction;
+            //transform.forward = direction;
             rb.MovePosition(transform.position + (direction * speed * Time.deltaTime));
         }
         bool grounded()

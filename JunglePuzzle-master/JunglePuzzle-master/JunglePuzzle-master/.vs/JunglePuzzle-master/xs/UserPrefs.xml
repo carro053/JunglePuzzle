@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{9BD5153F-4300-2499-4CFB-629EB6A487EE}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Character and Camera/Character.cs">
     <Files>
-      <File FileName="Assets/Character and Camera/Character.cs" Line="111" Column="1" />
+      <File FileName="Assets/Character and Camera/Character.cs" Line="48" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="dc879d5c-d178-44e5-aeda-805b20476b55" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="396a7509-5bb9-4e27-aaf7-3ddeabacefbb" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
