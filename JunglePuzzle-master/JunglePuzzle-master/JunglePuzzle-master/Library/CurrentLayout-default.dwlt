@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 1642
+  controlID: 136
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 708, y: 492}
   m_MaxSize: {x: 18003, y: 14042}
   vertical: 0
-  controlID: 1641
+  controlID: 35
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -377,20 +377,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Game Objects
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Game Objects
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/Ryan/JunglePuzzle/JunglePuzzle-master/JunglePuzzle-master/JunglePuzzle-master
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fc450000
-    m_LastClickedID: 17916
-    m_ExpandedIDs: 00000000f8450000fc45000000ca9a3b
+    m_SelectedIDs: 6a5f0000
+    m_LastClickedID: 24426
+    m_ExpandedIDs: 00000000ba5c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -418,7 +418,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000ba5c0000bc5c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -473,7 +473,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 137.5
+  m_DirectoriesAreaWidth: 333.5
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -503,23 +503,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b6800500
-      m_LastClickedID: 360630
-      m_ExpandedIDs: fc7bfdff2ea4fdffbcb6fdfff4cefdffecd5fdffc2f5fdff54f7fdff8c65feffe865feffb27afeffbca3feff6a39fffffa5fffff7276ffff0c78ffff9e8bffffb88cffff16b5ffff48f1ffff2444000018e7000008050300da050300f20503008e060300d00603001a070300fe450400dc460400f44604008a470400d04704001e48040008d50400b6d50400fcd504002c4d0500724d05000c8005009a810500e0810500
+      m_SelectedIDs: 261f0200
+      m_LastClickedID: 139046
+      m_ExpandedIDs: 5055feff9856feff666dfefffa87feffbe9dfeff8eb0feffdcb2feff1ac6feff7ec9fefff8ddfeff7007ffffb807ffff5012ffffb212ffff121cffff4c2fffff48a0000020ab00007aab00008edf0000fefb000080080100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Button
-        m_OriginalName: Button
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 197880
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -603,9 +603,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 169.10654, y: 35.48304, z: -62.326626}
+    m_Target: {x: -8.168076, y: 1.1872803, z: -2.7898867}
     speed: 2
-    m_Value: {x: 169.10654, y: 35.48304, z: -62.326626}
+    m_Value: {x: -8.168076, y: 1.1872803, z: -2.7898867}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -655,9 +655,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 19.877144
+    m_Target: 10.2064705
     speed: 2
-    m_Value: 19.877144
+    m_Value: 10.2064705
   m_Ortho:
     m_Target: 1
     speed: 2
