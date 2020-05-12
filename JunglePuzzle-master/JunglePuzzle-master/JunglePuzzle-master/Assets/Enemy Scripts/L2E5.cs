@@ -18,9 +18,9 @@ public class L2E5 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (this.transform.position.x <= 28)
+        if (this.transform.position.x <= 29)
             direction = new Vector3(1, 0, 0);
-        else if (this.transform.position.x >= 45)
+        else if (this.transform.position.x >= 44)
             direction = new Vector3(-1, 0, 0);
         controller.MovePosition(transform.position + (direction * speed * Time.deltaTime));
     }

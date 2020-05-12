@@ -18,7 +18,7 @@ public class L2E : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (this.transform.position.x <= 84)
+        if (this.transform.position.x <= 85)
             direction = new Vector3(1, 0, 0);
         else if (this.transform.position.x >= 101)
             direction = new Vector3(-1, 0, 0);

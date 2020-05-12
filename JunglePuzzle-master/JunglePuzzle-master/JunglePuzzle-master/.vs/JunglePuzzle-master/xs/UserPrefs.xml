@@ -1,12 +1,16 @@
 ﻿<Properties StartupConfiguration="{9BD5153F-4300-2499-4CFB-629EB6A487EE}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Character and Camera/Character.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Enemy Scripts/L2E4.cs">
     <Files>
-      <File FileName="Assets/Character and Camera/Character.cs" Line="48" Column="27" />
+      <File FileName="Assets/Character and Camera/Character.cs" Line="61" Column="54" />
+      <File FileName="Assets/Enemy Scripts/L2E.cs" Line="21" Column="44" />
+      <File FileName="Assets/Enemy Scripts/L2E5.cs" Line="21" Column="44" />
+      <File FileName="Assets/Enemy Scripts/L2E1.cs" Line="22" Column="44" />
+      <File FileName="Assets/Enemy Scripts/L2E4.cs" Line="21" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="396a7509-5bb9-4e27-aaf7-3ddeabacefbb" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4e8a382b-7482-4d9b-9127-7fd4374ff4b5" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

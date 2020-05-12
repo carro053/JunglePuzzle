@@ -17,6 +17,7 @@ public class Character : MonoBehaviour
     public int buttoncount1;
     public Vector3 respawnPoint;
     public bool doubleJump;
+    private Animator anim;
 
 
      // Start is called before the first frame update
@@ -24,6 +25,7 @@ public class Character : MonoBehaviour
     {
        
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
         buttoncount=0;
         buttoncount1=0;
         doubleJump = false;
@@ -37,7 +39,7 @@ public class Character : MonoBehaviour
         else if(SceneManager.GetActiveScene().name == "Level2")
         {
             respawnPoint = new Vector3(-9, -2, 0);
-            speed = 5.0f;
+            speed = 6.0f;
             jumpHeight = 7.0f;
             doubleJump = true;
         }
@@ -54,15 +56,6 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
-        direction = Vector3.zero;
-        direction.x = Input.GetAxis("Horizontal");
-        direction = direction.normalized;
-        if (direction != Vector3.zero)
-        {
-            //transform.forward = direction;
-            rb.MovePosition(transform.position + (direction * speed * Time.deltaTime));
-        }
         bool grounded()
         {
             if (Physics.CheckSphere(feet.position, .1f, ground))
@@ -72,10 +65,28 @@ public class Character : MonoBehaviour
             }
             else { return false; }
         }
+
+        direction = Vector3.zero;
+        direction.x = Input.GetAxis("Horizontal");
+        direction = direction.normalized;
+        if (direction != Vector3.zero && grounded())
+        {
+            rb.MovePosition(transform.position + (direction * speed * Time.deltaTime));
+            anim.Play("Run", 0);
+        }
+        else if(direction != Vector3.zero)
+        {
+            rb.MovePosition(transform.position + (direction * speed * Time.deltaTime));
+        }
+        
         if (Input.GetButtonDown("Jump") && grounded())
         {
+       
             db += 1;
             rb.AddForce(Vector3.up * jumpHeight, ForceMode.VelocityChange);
+            anim.Play("Jump", 0);
+            
+
         }
         else if (Input.GetButtonDown("Jump") && doubleJump == true && db < 2)
         {
@@ -83,8 +94,11 @@ public class Character : MonoBehaviour
             float x = rb.velocity.x;
             rb.velocity = new Vector3(x, 0, 0);
             rb.AddForce(Vector3.up * jumpHeight, ForceMode.VelocityChange);
+            anim.Play("Jump", 0);
+          
 
         }
+        
 
 
     }
