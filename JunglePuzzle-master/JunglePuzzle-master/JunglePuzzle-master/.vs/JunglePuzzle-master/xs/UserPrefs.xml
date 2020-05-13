@@ -1,16 +1,20 @@
 ﻿<Properties StartupConfiguration="{9BD5153F-4300-2499-4CFB-629EB6A487EE}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Character and Camera/Character.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Enemy Scripts/L3E3.cs">
     <Files>
-      <File FileName="Assets/Button Scripts/L3B9.cs" Line="24" Column="25" />
-      <File FileName="Assets/Button Scripts/L3B10.cs" Line="24" Column="44" />
-      <File FileName="Assets/Button Scripts/DropBlock.cs" Line="24" Column="6" />
-      <File FileName="Assets/Button Scripts/DropRocks.cs" Line="24" Column="10" />
-      <File FileName="Assets/Character and Camera/Character.cs" Line="169" Column="10" />
+      <File FileName="Assets/Enemy Scripts/L3E2.cs" Line="21" Column="43" />
+      <File FileName="Assets/Enemy Scripts/L3E3.cs" Line="23" Column="49" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="JunglePuzzle-master" expanded="True" selected="True" />
+          <Node name="JunglePuzzle-master" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Button Scripts" expanded="True" />
+              <Node name="Enemy Scripts" expanded="True">
+                <Node name="L3E3.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>

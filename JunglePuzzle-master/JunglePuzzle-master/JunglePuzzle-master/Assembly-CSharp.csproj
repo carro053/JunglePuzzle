@@ -93,6 +93,9 @@
     <Compile Include="Assets\Enemy Scripts\L2E3.cs" />
     <Compile Include="Assets\Enemy Scripts\L2E4.cs" />
     <Compile Include="Assets\Enemy Scripts\L2E5.cs" />
+    <Compile Include="Assets\Enemy Scripts\L3E1.cs" />
+    <Compile Include="Assets\Enemy Scripts\L3E2.cs" />
+    <Compile Include="Assets\Enemy Scripts\L3E3.cs" />
     <Compile Include="Assets\Game Objects\BoxScript.cs" />
     <Compile Include="Assets\OptionsMenu.cs" />
     <Compile Include="Assets\PauseMenu.cs" />

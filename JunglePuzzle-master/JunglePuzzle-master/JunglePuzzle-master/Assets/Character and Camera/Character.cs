@@ -128,7 +128,6 @@ public class Character : MonoBehaviour
             rb.velocity = new Vector3(x, 0, 0);
             rb.AddForce(Vector3.up * jumpHeight, ForceMode.VelocityChange);
             anim.Play("Jump", 0);
-          
 
         }
 
