@@ -43,7 +43,7 @@ public class Character : MonoBehaviour
         else if(SceneManager.GetActiveScene().name == "Level2")
         {
             respawnPoint = new Vector3(-9, -2, 0);
-            speed = 7.0f;
+            speed = 9.0f;
             jumpHeight = 7.0f;
             doubleJump = true;
             dash = false;
