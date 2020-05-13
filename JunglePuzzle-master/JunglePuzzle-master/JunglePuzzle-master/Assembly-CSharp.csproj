@@ -63,11 +63,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Button Scripts\DropBlock.cs" />
+    <Compile Include="Assets\Button Scripts\DropRocks.cs" />
     <Compile Include="Assets\Button Scripts\L2B1.cs" />
     <Compile Include="Assets\Button Scripts\L2B2.cs" />
     <Compile Include="Assets\Button Scripts\L2B3.cs" />
     <Compile Include="Assets\Button Scripts\L2B4.cs" />
     <Compile Include="Assets\Button Scripts\L2B5.cs" />
+    <Compile Include="Assets\Button Scripts\L3B1.cs" />
+    <Compile Include="Assets\Button Scripts\L3B10.cs" />
+    <Compile Include="Assets\Button Scripts\L3B2.cs" />
+    <Compile Include="Assets\Button Scripts\L3B3.cs" />
+    <Compile Include="Assets\Button Scripts\L3B4.cs" />
+    <Compile Include="Assets\Button Scripts\L3B5.cs" />
+    <Compile Include="Assets\Button Scripts\L3B6.cs" />
+    <Compile Include="Assets\Button Scripts\L3B7.cs" />
+    <Compile Include="Assets\Button Scripts\L3B8.cs" />
+    <Compile Include="Assets\Button Scripts\L3B9.cs" />
     <Compile Include="Assets\Character and Camera\Camera.cs" />
     <Compile Include="Assets\Character and Camera\Character.cs" />
     <Compile Include="Assets\Enemy Scripts\L1E1.cs" />

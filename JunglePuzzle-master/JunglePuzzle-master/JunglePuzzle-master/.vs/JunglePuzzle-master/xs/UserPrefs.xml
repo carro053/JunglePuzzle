@@ -1,12 +1,19 @@
 ﻿<Properties StartupConfiguration="{9BD5153F-4300-2499-4CFB-629EB6A487EE}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Enemy Scripts/L2E4.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Character and Camera/Character.cs">
     <Files>
-      <File FileName="Assets/Character and Camera/Character.cs" Line="61" Column="54" />
-      <File FileName="Assets/Enemy Scripts/L2E.cs" Line="21" Column="44" />
-      <File FileName="Assets/Enemy Scripts/L2E5.cs" Line="21" Column="44" />
-      <File FileName="Assets/Enemy Scripts/L2E1.cs" Line="22" Column="44" />
-      <File FileName="Assets/Enemy Scripts/L2E4.cs" Line="21" Column="44" />
+      <File FileName="Assets/Button Scripts/L3B9.cs" Line="24" Column="25" />
+      <File FileName="Assets/Button Scripts/L3B10.cs" Line="24" Column="44" />
+      <File FileName="Assets/Button Scripts/DropBlock.cs" Line="24" Column="6" />
+      <File FileName="Assets/Button Scripts/DropRocks.cs" Line="24" Column="10" />
+      <File FileName="Assets/Character and Camera/Character.cs" Line="169" Column="10" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="JunglePuzzle-master" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

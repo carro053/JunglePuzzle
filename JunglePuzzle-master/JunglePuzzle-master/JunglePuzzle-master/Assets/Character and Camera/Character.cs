@@ -17,6 +17,9 @@ public class Character : MonoBehaviour
     public int buttoncount1;
     public Vector3 respawnPoint;
     public bool doubleJump;
+    public bool dash;
+    public float dashTimer;
+    public float isDashingTimer;
     private Animator anim;
 
 
@@ -27,28 +30,31 @@ public class Character : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         buttoncount=0;
-        buttoncount1=0;
-        doubleJump = false;
+        buttoncount1 = 0;
+        dashTimer = 0.0f;
         if (SceneManager.GetActiveScene().name == "Level1")
         {
             respawnPoint = new Vector3(-14.0f, -3.5f, 0);
-            speed = 3.0f;
+            speed = 5.0f;
             jumpHeight = 6.2f;
             doubleJump = false;
+            dash = false;
         }
         else if(SceneManager.GetActiveScene().name == "Level2")
         {
             respawnPoint = new Vector3(-9, -2, 0);
-            speed = 6.0f;
+            speed = 7.0f;
             jumpHeight = 7.0f;
             doubleJump = true;
+            dash = false;
         }
         else if (SceneManager.GetActiveScene().name == "Level3")
         {
             respawnPoint = new Vector3(-14, -3, 0);
-            speed = 5.0f;
-            jumpHeight = 7.0f;
+            speed = 4.0f;
+            jumpHeight = 6.0f;
             doubleJump = true;
+            dash = true;
         }
 
     }
@@ -65,10 +71,37 @@ public class Character : MonoBehaviour
             }
             else { return false; }
         }
-
+        if (Input.GetButtonDown("Dash") && dashTimer <= 0 && dash)
+        {
+            dashTimer = 6.0f;
+            isDashingTimer = .5f;
+        }
+        if (dashTimer >= 0)
+            dashTimer -= Time.deltaTime;
+        if (isDashingTimer >= 0)
+            isDashingTimer -= Time.deltaTime;
+       
         direction = Vector3.zero;
         direction.x = Input.GetAxis("Horizontal");
         direction = direction.normalized;
+        if (isDashingTimer > 0)
+        { speed = 12.0f; }
+
+        else
+        {
+            if (SceneManager.GetActiveScene().name == "Level1")
+            {
+                speed = 5.0f;
+            }
+            else if (SceneManager.GetActiveScene().name == "Level2")
+            {
+                speed = 7.0f;
+            }
+            else if (SceneManager.GetActiveScene().name == "Level3")
+            {
+                speed = 4.0f;
+            }
+        }
         if (direction != Vector3.zero && grounded())
         {
             rb.MovePosition(transform.position + (direction * speed * Time.deltaTime));
@@ -98,8 +131,6 @@ public class Character : MonoBehaviour
           
 
         }
-        
-
 
     }
 
@@ -107,7 +138,7 @@ public class Character : MonoBehaviour
 
 void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy" || collision.gameObject.name=="platform-detail-15")
         {
             transform.position = respawnPoint;
             rb.velocity = Vector3.zero;
@@ -134,6 +165,12 @@ void OnCollisionEnter(Collision collision)
         else if (collision.gameObject.name == "ExitLevel2")
         {
             SceneManager.LoadScene("Level3");
+
+
+        }
+        else if (collision.gameObject.name == "ExitLevel3")
+        {
+            SceneManager.LoadScene("MainMenu");
 
         }
 
